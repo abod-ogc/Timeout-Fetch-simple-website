@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout Fetch</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="headings">
+            <h2>Timeout Fetch (Promise.race)</h2>
+            <p>Fetches a post. If it takes too long, we timeout.</p>
+        </div>
+        <div class="actionBtns">
+            <button class="fetchDataBtn">Fetch Post</button>
+            <p>Timeout (ms):</p>
+            <input type="number" min="50" max="10000" step="50" value="50" class="msInput">
+        </div>
+        <div class="preview">
+            <p class="resView"></p>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #fff;
+    --secondry-color: #a9141b;
+    --text-primary: #333;
+    --text-secondry: #777;
+    --muted: #d3d3d3;
+
+    --padding-1: 5px;
+    --padding-2: 10px;
+    --padding-3: 15px;
+    --padding-4: 20px;
+
+    --border-radius-1: 5px;
+    --border-radius-2: 10px;
+    --border-radius-3: 15px;
+
+    --box-shadow-1: 0 2px 5px rgba(0,0,0,0.2);
+    --box-shadow-2: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-primary);
+    padding: var(--padding-4);
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+button{
+    padding: var(--padding-2);
+    outline: none;
+    border: none;
+    border-radius: var(--border-radius-2);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+p, span{
+    color: var(--text-secondry);
+}
+
+.container{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow-2);
+    border-radius: var(--border-radius-3);
+    padding: var(--padding-4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--padding-4);
+}
+
+.actionBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--padding-1);
+}
+
+.fetchDataBtn{
+    background-color: var(--secondry-color);
+    color: var(--primary-color);
+}
+
+input[type="number"]{
+    border: none;
+    width: 90px;
+    margin-left: 20px;
+    outline: none;
+}
+
+.resView{
+    white-space: pre-wrap;
+}
